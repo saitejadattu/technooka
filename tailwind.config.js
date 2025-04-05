@@ -10,7 +10,8 @@ module.exports = {
         customLightBlue:"#0084CA",
         lemonYellow:"#FFE09B",
         customYellow:"#FFB200",
-        customBlue:"#3384B9"
+        customBlue:"#3384B9",
+        customlightsky:"#E6F0F6",
       }
     },
   },

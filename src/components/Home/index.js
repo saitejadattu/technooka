@@ -114,7 +114,7 @@ const Home = () => {
                 </button>
               ))}
             </div>
-            <div>
+            <div className="flex">
               <div className="flex flex-col w-2/4">
                 <div className="flex flex-col">
                   <lable>Select Fees Payment Templates</lable>
@@ -122,27 +122,92 @@ const Home = () => {
                     <option>Select</option>
                   </select>
                 </div>
-                <div className="flex">
-                  <div className="flex flex-col">
+                <div className="flex justify-between mt-5">
+                  <div className="flex flex-col mt-5">
                     <lable>Fees Name</lable>
-                    <select className="w-2/4 p-2 border rounded mt-5">
+                    <select className="w-72 p-2 border rounded mt-5">
                       <option>Select</option>
                     </select>
                   </div>
-                  <div className="flex flex-col">
+                  <div className="flex flex-col  mt-5">
                     <lable> Fees Amount</lable>
-                    <select className="w-2/4 p-2 border rounded mt-5">
+                    <select className="w-48 p-2 border rounded mt-5">
                       <option>Select</option>
                     </select>
                   </div>
                 </div>
+                <div className="flex justify-between mt-5">
+                  <div className="flex flex-col mt-5">
+                    <lable>Fees Name</lable>
+                    <input
+                      placeholder="Default"
+                      className="rounded p-4 border-2 mt-5"
+                    />
+                  </div>
+                  <div className="flex flex-col  mt-5">
+                    <lable> Fees Amount</lable>
+                    <input
+                      placeholder="NUM"
+                      className="rounded p-4 border-2 mt-5"
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-between mt-5">
+                  <div className="flex flex-col mt-5">
+                    <lable>Fees Name</lable>
+                    <input
+                      placeholder="Default"
+                      className="rounded p-4 border-2 mt-5"
+                    />
+                  </div>
+                  <div className="flex flex-col  mt-5">
+                    <lable> Fees Amount</lable>
+                    <input
+                      placeholder="NUM"
+                      className="rounded p-4 border-2 mt-5"
+                    />
+                  </div>
+                </div>
               </div>
-              <div>
-                <lable>Total Fee Amount</lable>
+              <div className=" bg-customlightsky p-5 m-10 rounded shadow w-2/4 flex flex-col justify-between">
+                <div>
+                  <lable>Total Fee Amount</lable>
+                  <table className="w-full border-collapse">
+                    <thead className="bg-white">
+                      <tr>
+                        <th className="text-center">No</th>
+                        <th>Fees Name</th>
+                        <th>Fees Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="text-center">
+                        <td>1</td>
+                        <td>Tution Fee</td>
+                        <td>30000</td>
+                      </tr>
+                      <tr className="text-center">
+                        <td>2</td>
+                        <td>Lab Fee</td>
+                        <td>10000</td>
+                      </tr>
+                      <tr className="text-center">
+                        <td>3</td>
+                        <td>Sports Fee</td>
+                        <td>10000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div className="flex justify-between mt-5">
+                  <h1>Total Fees Amount</h1>
+                  <input placeholder="NUM TOTAL" />
+                </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row mt-5 space-y-2 md:space-y-0 md:space-x-3">
+          <div className="flex relative right-0 flex-col md:flex-row mt-5 space-y-2 md:space-y-0 md:space-x-3">
             <button className="bg-blue-500 text-white p-2 rounded">
               Next / Apply
             </button>
